@@ -1,0 +1,294 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  background-image: url("../image/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  position: absolute;
+  top: 5%;
+  left: 16%;
+  right: 16%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.93);
+}
+
+.left {
+  width: 20%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.profile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+}
+
+.contact ul li {
+  margin-bottom: 10px;
+  display: flex;
+  width: 35px;
+}
+
+.skills .skill {
+  margin-bottom: 10px;
+}
+
+.skills .skill-bar {
+  background-color: #ccc;
+  height: 10px;
+}
+
+.skills .skill-level {
+  background-color: #33a6b8;
+  height: 100%;
+}
+
+.right {
+  width: 70%;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.experience h2,
+.education h2,
+.certificates h2,
+.awards h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.pro {
+  width: 200px;
+}
+
+.fa-brands {
+  font-size: 23px;
+}
+
+.fa-envelope {
+  font-size: 23px;
+}
+
+.contact-icons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-icons-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.contact-icons-container ul li {
+  margin: 0 10px;
+}
+
+.para {
+  font-size: 13px;
+}
+
+.languages,
+.education {
+  line-height: 13px;
+}
+
+.header {
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 20px;
+}
+
+.button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #33a6b8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-label {
+  position: relative;
+  margin-left: 10px;
+}
+
+.toggle-label input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-slider::before {
+  content: "\f185";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .toggle-slider::before {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    left: 5%;
+    right: 5%;
+  }
+
+  .left {
+    width: 90%;
+  }
+
+  .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header {
+    margin-right: 21px;
+  }
+
+  .experience h2,
+  .education h2,
+  .certificates h2,
+  .awards h2 {
+    font-size: 20px;
+  }
+
+  .experience p,
+  .education p,
+  .certificates p,
+  .awards p {
+    padding: 10px;
+  }
+
+  .fa-brands,
+  .fa-envelope {
+    font-size: 18px;
+  }
+
+  .para {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .languages,
+  .education {
+    line-height: 12px;
+  }
+  .toggle-container {
+    top: -3px;
+    right: 50%;
+  }
+  .toggle-slider::before {
+    font-size: 20px;
+  }
+
+  .contact-icons-container ul li a i {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    left: 5%;
+    right: 5%;
+  }
+
+  .left {
+    width: 90%;
+  }
+
+  .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .experience h2,
+  .education h2,
+  .certificates h2,
+  .awards h2 {
+    font-size: 18px;
+  }
+
+  .experience p,
+  .education p,
+  .certificates p,
+  .awards p {
+    padding: 10px;
+  }
+
+  .fa-brands,
+  .fa-envelope {
+    font-size: 16px;
+  }
+
+  .para {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .languages,
+  .education {
+    line-height: 12px;
+  }
+
+  .toggle-container {
+    top: -3px;
+    right: 50%;
+  }
+
+  .toggle-slider::before {
+    font-size: 20px;
+  }
+}

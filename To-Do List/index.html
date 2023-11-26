@@ -1,0 +1,39 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="icon" type="image/png" href="image/l1.png" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="wrapper">
+      <div class="task-input">
+        <img src="image/bars.png" alt="icon" class="barss" />
+        <input type="text" placeholder="Add a new task" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+    <footer>&copy;2023 Kamlesh Singh Mahar | All Rights Reserved | Trusingbrains</footer>
+    <script src="js/script.js"></script>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+      </script>
+  </body>
+</html>

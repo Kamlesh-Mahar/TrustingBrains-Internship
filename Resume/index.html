@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      id="dark-mode-styles"
+      rel="stylesheet"
+      href="styles/light-mode.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/7685b97bf1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Advanced Resume</title>
+  </head>
+  <body>
+    <div class="toggle-container">
+      <label class="toggle-label">
+        <input
+          type="checkbox"
+          id="dark-mode-toggle"
+          onchange="toggleDarkMode()"
+        />
+        <div class="toggle-slider"></div>
+      </label>
+      <span></span>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="profile">
+          <img class="pro" src="image/profile.jpg" alt="Profile Picture" />
+          <div class="contact-icons-container">
+            <ul>
+              <li>
+                <a href="https://github.com/Kamlesh-Mahar"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/kamlesh-mahar-680011245/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h2>Skills</h2>
+            <hr />
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 99%"></div>
+              </div>
+              <span>C++</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+              <span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+              <span>Java</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="education">
+            <h2>Education</h2>
+            <hr />
+            <div class="software-item">
+              <p>‣ High School</p>
+              <p class="para">Green Valley Public School<br />93.7%</p>
+              <p>‣ Collage</p>
+              <p class="para">Graphic Era Hill Universtiy<br />8.9 gpa</p>
+            </div>
+          </div>
+          <div class="languages">
+            <h2>Languages</h2>
+            <hr />
+            <div class="language">
+              <span>‣ English </span>
+              <p class="para">Native or Bilingual Proficiency</p>
+              <span>‣ Hindi</span>
+              <p class="para">Native or Bilingual Proficiency</p>
+              <span>‣ Spanish</span>
+              <p class="para">Slight Proficient</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="header">
+          <h1>Alex San</h1>
+          <p>
+            I'm a passionate and creative web developer with a deep love for
+            crafting exceptional digital experiences. With several years of
+            experience in the ever-evolving field of web development, I've had
+            the privilege of working on a diverse range of projects that have
+            honed my skills and fueled my enthusiasm for this dynamic industry.
+          </p>
+          <hr />
+        </div>
+        <div class="experience">
+          <h2>Experience</h2>
+          <p>
+            • Led the development of several e-commerce websites, resulting in a
+            20% increase in online sales.<br />
+            • Collaborated with cross-functional teams to implement responsive
+            design solutions, ensuring optimal user experiences across
+            devices.<br />
+            • Integrated third-party APIs for payment gateways and social media
+            sharing, enhancing website functionality.<br />
+            • Developed custom WordPress themes and plugins to meet clients'
+            specific requirements.
+          </p>
+        </div>
+
+        <div class="certificates">
+          <h2>Certificates</h2>
+          <p>
+            • Certified Front-End Developer (Codecademy)<br />
+            • Back-End Development with Node.js (Coursera)<br />
+            • Advanced CSS and Sass (Udemy)
+          </p>
+        </div>
+        <div class="awards">
+          <h2>Awards</h2>
+          <p>
+            • Webby Award for Best User Interface (2023)<br />
+            • Tech Innovator of the Year (2022)<br />
+            • Outstanding Contribution to Web Development Community (2023)
+          </p>
+        </div>
+        <div class="experience">
+          <h2>My Expertise</h2>
+          <p>
+            • My expertise spans a wide spectrum of web technologies.<br />
+            • I'm proficient in front-end and back-end both development, where I
+            bring designs to life with HTML, CSS, and JavaScript and other
+            tools.<br />
+            • I take pride in creating web interfaces that not only look
+            beautiful but also provide a seamless user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleDarkMode() {
+        const darkModeStylesheet = document.getElementById("dark-mode-styles");
+        if (
+          darkModeStylesheet.getAttribute("href") === "styles/dark-mode.css"
+        ) {
+          darkModeStylesheet.setAttribute("href", "styles/light-mode.css");
+        } else {
+          darkModeStylesheet.setAttribute("href", "styles/dark-mode.css");
+        }
+      }
+    </script>
+  </body>
+</html>
